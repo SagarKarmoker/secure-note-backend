@@ -7,7 +7,7 @@ import org.springframework.web.bind.annotation.RestController;
 
 public class HelloController {
 
-    @GetMapping("/hello")
+    @GetMapping("/")
     public String welcome() {
        return "Welcome to Secure Note Backend";
     }
