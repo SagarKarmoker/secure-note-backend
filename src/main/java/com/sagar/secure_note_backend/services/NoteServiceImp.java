@@ -22,7 +22,7 @@ public class NoteServiceImp implements NoteService {
     }
 
     @Override
-    public Note upateNoteForUser(String username, String content, Long id) {
+    public Note updateNoteForUser(String username, String content, Long id) {
         Note existingNote = noteRepo.findById(id)
                 .orElseThrow(() -> new RuntimeException("Note not found"));
 
